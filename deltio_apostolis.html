@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Δελτίο Αποστολής</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #d32f2f;
+        }
+        .info-line {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+        .item-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .item-table th {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        .item-table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .footer {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-box {
+            width: 45%;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+        }
+        .date {
+            text-align: right;
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ΔΕΛΤΙΟ ΑΠΟΣΤΟΛΗΣ / SHIPMENT NOTE</h1>
+        <p>Ημερομηνία / Date: <input type="text" style="border: none; border-bottom: 1px solid #000; padding: 2px 5px; width: 150px; font-size: 14px;" placeholder="__/__/____"></p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">ΑΠΟΣΤΟΛΕΑΣ / SENDER:</div>
+        <div class="info-line"><strong>Δαυίδ Αντώνιος</strong></div>
+        <div class="info-line">ΑΦΜ / VAT: 130307429</div>
+        <div class="info-line">ΔΟΥ / Tax Authority: ΧΟΛΑΡΓΟΥ</div>
+        <div class="info-line">Διεύθυνση: Διγενή 17Α</div>
+        <div class="info-line">15341 Αγία Παρασκευή, Αττική</div>
+        <div class="info-line">Τηλ. / Tel: 6944-636910</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">ΠΑΡΑΛΗΠΤΗΣ / RECIPIENT:</div>
+        <div class="info-line"><strong>RED COMMUNICATIONS OE</strong></div>
+        <div class="info-line">ΑΦΜ / VAT: 998126662</div>
+        <div class="info-line">ΔΟΥ / Tax Authority: Ν. Ιωνίας</div>
+        <div class="info-line">Διεύθυνση: Αμαρουσίου 14</div>
+        <div class="info-line">14122 Ν. Ηράκλειο, Αττική</div>
+        <div class="info-line">Τηλ. / Tel: +30 (210) 62.62.100</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">ΣΚΟΠΟΣ ΔΙΑΚΙΝΗΣΗΣ / PURPOSE:</div>
+        <div class="info-line">Επιστροφή προϊόντος / Product return</div>
+    </div>
+
+    <table class="item-table">
+        <thead>
+            <tr>
+                <th>Είδος / Item & Περιγραφή / Description</th>
+                <th style="text-align: center;">Ποσ. / Qty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ViewSonic VA1650 - Y39251300664</td>
+                <td style="text-align: center;">1 τεμ.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin: 20px 0; padding: 10px; background-color: #f9f9f9;">
+        <strong>Συνολική Ποσότητα / Items in Total: 1</strong>
+    </div>
+
+    <div class="footer">
+        <div class="signature-box">
+            <strong>Παράδοση / For Delivery</strong><br><br>
+            ................................................<br>
+            Υπογραφή Μεταφορέα / Carrier Signature
+        </div>
+        <div class="signature-box">
+            <strong>Παραλαβή / For Recipient</strong><br><br>
+            ................................................<br>
+            Ονοματεπώνυμο - Υπογραφή / Name - Signature
+        </div>
+    </div>
+
+</body>
+</html>
