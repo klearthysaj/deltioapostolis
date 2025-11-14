@@ -67,6 +67,28 @@
             margin-top: 30px;
             font-style: italic;
         }
+        .print-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+        .print-button:hover {
+            background-color: #b71c1c;
+        }
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -77,19 +99,19 @@
 
     <div class="section">
         <div class="section-title">ΑΠΟΣΤΟΛΕΑΣ / SENDER:</div>
-        <div class="info-line"><strong>Δαυίδ Αντώνιος</strong></div>
-        <div class="info-line">ΑΦΜ / VAT: 130307429</div>
-        <div class="info-line">ΔΟΥ / Tax Authority: ΧΟΛΑΡΓΟΥ</div>
-        <div class="info-line">Διεύθυνση: Διγενή 17Α</div>
-        <div class="info-line">15341 Αγία Παρασκευή, Αττική</div>
-        <div class="info-line">Τηλ. / Tel: 6944-636910</div>
+        <div class="info-line"><strong><input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 300px;" placeholder="Ονοματεπώνυμο"></strong></div>
+        <div class="info-line">ΑΦΜ / VAT: <input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 200px;" placeholder="ΑΦΜ"></div>
+        <div class="info-line">ΔΟΥ / Tax Authority: <input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 200px;" placeholder="ΔΟΥ"></div>
+        <div class="info-line">Διεύθυνση: <input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 400px;" placeholder="Διεύθυνση"></div>
+        <div class="info-line"><input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 300px;" placeholder="Ταχυδρομικός Κώδικας, Πόλη, Περιοχή"></div>
+        <div class="info-line">Τηλ. / Tel: <input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 200px;" placeholder="Τηλέφωνο"></div>
     </div>
 
     <div class="section">
         <div class="section-title">ΠΑΡΑΛΗΠΤΗΣ / RECIPIENT:</div>
         <div class="info-line"><strong>RED COMMUNICATIONS OE</strong></div>
         <div class="info-line">ΑΦΜ / VAT: 998126662</div>
-        <div class="info-line">ΔΟΥ / Tax Authority: Ν. Ιωνίας</div>
+        <div class="info-line">ΔΟΥ / Tax Authority: ΚΕΦΟΔΕ ΑΤΤΙΚΗΣ</div>
         <div class="info-line">Διεύθυνση: Αμαρουσίου 14</div>
         <div class="info-line">14122 Ν. Ηράκλειο, Αττική</div>
         <div class="info-line">Τηλ. / Tel: +30 (210) 62.62.100</div>
@@ -109,8 +131,8 @@
         </thead>
         <tbody>
             <tr>
-                <td>ViewSonic VA1650 - Y39251300664</td>
-                <td style="text-align: center;">1 τεμ.</td>
+                <td><input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 100%;" placeholder="Περιγραφή προϊόντος - Σειριακός αριθμός"></td>
+                <td style="text-align: center;"><input type="text" style="border: none; border-bottom: 1px solid #ccc; padding: 2px 5px; width: 60px; text-align: center;" placeholder="1"></td>
             </tr>
         </tbody>
     </table>
@@ -131,6 +153,8 @@
             Ονοματεπώνυμο - Υπογραφή / Name - Signature
         </div>
     </div>
+
+    <button class="print-button" onclick="window.print()">Εκτύπωση Α4</button>
 
 </body>
 </html>
